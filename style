@@ -1,1 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffcc99; /* Màu cam nhạt */
+    font-family: Arial, sans-serif;
+}
 
+.container {
+    text-align: center;
+    padding: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(200, 150, 255, 0.5); /* Màu tím nhạt với 50% độ mờ */
+    pointer-events: none; /* Không cho phép tương tác với lớp nền này */
+    transform: translateX(-50%); /* Dịch chuyển về một hướng */
+}
